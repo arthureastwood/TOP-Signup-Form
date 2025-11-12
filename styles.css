@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'sixty-four';
+    src: url('./fonts/Sixtyfour/Sixtyfour-Regular-VariableFont_BLED\,SCAN.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'norse-bold';
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.form-logo-text{
+    font-family: "sixty-four";
+    font-size: larger;
+}
+
+button{
+    background-color: #0550b1;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+}
+
+span{
+    color: #0550b1;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
