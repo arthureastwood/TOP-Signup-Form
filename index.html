@@ -8,45 +8,68 @@
     
 </head>
 <body>
-    <form action="#" method="post">
-        <div class="form-pictures">
-            <div class="form-background">
-                <img src="./martin-katler-caNzzoxls8Q-unsplash.jpg" alt="Background image for the form with a PS5 standing next to a game pad">
-            </div>
-            <div class="form-logo">
-                <img src="./odin-lined.png" alt="The Odin Project logo">
-                <p class="form-logo-text">ODIN</p>
-            </div>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./assets/odin-lined.png" alt="The Odin Project logo">
+            <h1>ODIN</h1>
         </div>
-        <div class="form-content">
-            <div class="form-intro">
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
-                Sign up now to get started. <br><br>
-                You know you want to.
-            </div>
-            <div class="form-controls">
-                <p>Let's do this!</p> <br>
-                <div class="form-controls-left">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name" required>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-controls-right">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name" required>
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="password-confirm" name="password-confirm" required>
+        <div class="background">
+            <p>Background image by: <a href="https://unsplash.com/@martinkatler">Martin Katler</a> on <a href="https://unsplash.com/photos/black-and-silver-electronic-device-caNzzoxls8Q">Unsplash</a></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="form-intro">
+            <p>
+                This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams.
+            </p>
+            <p>Sign up <span>now</span> to get started.</p>
+            <p>You <span>know</span> you want to.</p>
+        </div>
+        <form action="#" method="post">
+            <div class="form-content">
+                <p>Let's do this!</p>
+                <div class="form-controls">
+                
+                    <div class="form-controls-left">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                    
+                    </div>
+                    <div class="form-controls-right">
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <label for="password-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="password-confirm" name="password-confirm" required>
+                        </div>
+                    
+                    </div>                
+                
                 </div>
                 <button type="submit">Create Account</button>
                 <p>Already have an account? <span>Log in</span></p>
-                
             </div>
-        </div>
-    </form>
+            
+        </form>
+    </div>
+    
 </body>
 </html>

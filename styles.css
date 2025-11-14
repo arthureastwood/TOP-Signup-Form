@@ -5,38 +5,192 @@
     font-style: normal;
 }
 
+:root{
+    --bg-color: #f4f5f8;
+    --primary-clr: #FFFFFF;
+    --secondary-clr: #0550b1;
+    --invalid-clr: rgb(235, 22, 22);
+    --valid-clr: rgb(23, 209, 23);
+    --form-input: #E5E7EB;
+}
+
 @font-face {
     font-family: 'norse-bold';
     src: url('./fonts/Norse-Bold.otf');
 }
 
-html{
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 20px;
-}
-
-.form-logo-text{
-    font-family: "sixty-four";
-    font-size: larger;
-}
-
-button{
-    background-color: #0550b1;
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 8px;
-    border: none;
+    font-size: 32px;
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--bg-color);
 }
 
 span{
-    color: #0550b1;
+    color: var(--secondary-clr);
 }
 
 form{
     display: flex;
     flex-direction: row;
+}
+
+.sidebar{
+    background: url(./assets/martin-katler-caNzzoxls8Q-unsplash.jpg) center / cover no-repeat ;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 1rem;
+}
+
+.logo img{
+    width: 6rem;
+    height: auto;
+}
+
+.logo h1{
+    font-family: "sixty-four", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: var(--primary-clr);
+    margin: 2rem 1rem;
+}
+
+.background{
+    font-size: 1rem;
+    color: var(--primary-clr);
+    text-align: center;
+    margin-top: auto;
+}
+
+.background a{
+    color: var(--primary-clr);
+}
+
+.main{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+}
+
+.form-intro{
+    padding: 1rem 3rem;
+}
+
+.form-intro p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.form-intro p > span{
+    font-style: italic;
+}
+
+.form-intro p:first-child{
+    margin-bottom: 0;
+}
+
+.form-intro p:nth-child(2){
+    margin-top: 0;
+}
+
+.form-content{
+    display: flex;
+    background-color: var(--primary-clr);
+    flex-direction: column;
+    padding: 1rem 3rem 1.4rem 3rem;
+    box-shadow: 5px 0 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.form-content p:first-child{
+    font-size: 1.5rem;
+}
+
+.form-content p{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.3rem 0;
+}
+
+.form-content div{
+    display: flex;
+    margin: 0.4rem 5rem 0 0;
+}
+
+.form-content div > div{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+form input{
+    width: 20rem;
+    border: none;
+    outline: 2px solid var(--form-input);
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+}
+
+form input[type="password"]:invalid{
+    outline: 2px solid var(--invalid-clr);
+}
+
+form input:focus{
+    outline: 2px solid blue;
+    box-shadow: 5px 5px 5px rgba(0, 0, 255, 0.25) ;
+}
+
+form button{
+    background-color: var(--secondary-clr);
+    cursor: pointer;
+    color: var(--primary-clr);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    border: none;
+    width: 12rem;
+    padding: 0.5rem 2rem;
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 10px var(--bg-color, 0.2);
+}
+
+form button:hover{
+    color: var(--secondary-clr);
+    background-color: var(--primary-clr);
+}
+
+form p{
+    font-size: 0.0025rem;
+    font-weight: 500;
+    margin: 0 2.5rem;
+}
+
+form p > span{
+    font-weight: 500;
+}
+
+form p > span:hover{
+    cursor: pointer;
 }
